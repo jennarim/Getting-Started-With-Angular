@@ -5,4 +5,4 @@
 <h1>Basic Outline</h1>
 A store catalog with a product list, "Share" button, and "Notify Me" button.
 
-This application demonstrates a foundation in components and template syntax. 
+This application demonstrates a foundation in components, template syntax, two-way binding, and routing. 
