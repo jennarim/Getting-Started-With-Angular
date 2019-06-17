@@ -16,5 +16,5 @@ A store catalog with a product list, "Share" button, and "Notify Me" button. Thi
 
     * _Attribute_: change appearance or behavior of an existing DOM element
        * ngModel: modifies behavior of an existing element, implements two-way data binding
-          * [ngModel]="currentHero.name" is syntax for one-way binding
-          * [(ngModel)]="currentHero.name" is for two-way binding
+          * `[ngModel]="currentHero.name"` is syntax for one-way binding
+          * `[(ngModel)]="currentHero.name"` is for two-way binding
