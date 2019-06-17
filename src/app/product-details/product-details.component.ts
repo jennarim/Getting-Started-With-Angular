@@ -19,3 +19,5 @@ export class ProductDetailsComponent implements OnInit {
   }
 
 }
+
+// ngOnInit(): invoked immediately and only once when the directive is instantiated
