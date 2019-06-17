@@ -18,3 +18,15 @@ A store catalog with a product list, "Share" button, and "Notify Me" button. Thi
        * ngModel: modifies behavior of an existing element, implements two-way data binding
           * `[ngModel]="currentHero.name"` is syntax for one-way binding
           * `[(ngModel)]="currentHero.name"` is for two-way binding
+          
+### 2. Data Binding
+* Interpolation {{ }}
+{{}} interpolation syntax: renders a property's value as text
+
+* Property Binding [ ]
+[] property binding syntax: lets you use property value in a template expression
+-- if you didn't use [], then hovering over link would literally display w.e is in quotes
+
+* Event Binding ( )
+<button (click)="onSave()">Save</button>
+- This event binding listens for a click, which would then call the component's onSave() method. 
