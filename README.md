@@ -44,27 +44,48 @@ This application contains the following components:
   * app-product-alerts: notifies user if an expensive item goes on sale
   
   
-  ### 3. Routing
-  Router: enables navigation from one view to the next as users click links
-  0. Create your new component (e.g.product details)
-  1. Register the route to your new page
-  ```typescript
-  @NgModule({
-   imports: [
-    BrowserModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent },
-    ])
-  ],
-  ```
-  A route associates one or more URL paths with a component. 
-  2. Insert a routerLink from your starting point that links to the route.
-  ```html
-  <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
-      {{ product.name }}
-  </a>
-  ```
+### 3. Routing
+Router: enables navigation from one view to the next as users click links
+0. Create your new component (e.g.product details)
+1. Register the route to your new page
+```typescript
+@NgModule({
+imports: [
+ BrowserModule,
+ ReactiveFormsModule,
+ RouterModule.forRoot([
+   { path: '', component: ProductListComponent },
+   { path: 'products/:productId', component: ProductDetailsComponent },
+ ])
+],
+```
+A route associates one or more URL paths with a component. 
+2. Insert a routerLink from your starting point that links to the route.
+```html
+<a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
+   {{ product.name }}
+</a>
+```
 
+### 4. Managing Data
+#### Services
+* _Services_: a class with a narrow, well-defined purpose; can be made available to any part of your application; the place where you share data between parts of your application
+  * Diff b/w service and component:
+     - a component enables the user experience and nothing more
+
+### 5. Forms
+Import the FormBuilder service.
+`import { FormBuilder } from '@angular/forms';`
+Inject the Formbuilder service.
+```typescript
+export class CartComponent {
+  items;
+
+  constructor(
+    private cartService: CartService,
+    private formBuilder: FormBuilder,
+  ) {
+  }
+}
+```
   
