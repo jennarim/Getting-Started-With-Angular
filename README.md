@@ -20,11 +20,9 @@ A store catalog with a product list, "Share" button, and "Notify Me" button. Thi
           * `[(ngModel)]="currentHero.name"` is for two-way binding
           
 ### 2. Data Binding
-* Interpolation {{ }}
-{{}} interpolation syntax: renders a property's value as text
+* Interpolation syntax {{ }} : renders a property's value as text
 
-* Property Binding [ ]
-[] property binding syntax: lets you use property value in a template expression
+* Property Binding [ ] : property binding syntax: lets you use property value in a template expression
 -- if you didn't use [], then hovering over link would literally display w.e is in quotes
 
 * Event Binding ( )
