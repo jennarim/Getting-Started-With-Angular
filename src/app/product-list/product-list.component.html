@@ -1,0 +1,58 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+  <h3> 
+    <a [title]="product.name + ' details'">
+      {{product.name}}
+    </a>
+  </h3>
+
+  <p *ngIf="product.description">
+    Description: {{product.description}}
+  </p>
+
+  <button (click)="share()"> Share </button>
+
+  <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
+
+</div>
+
+<!-- 
+
+
+## Interpolation {{ }}
+{{}} interpolation syntax: renders a property's value as text
+
+## Property Binding [ ]
+[] property binding syntax: lets you use property value in a template expression
+-- if you didn't use [], then hovering over link would literally display w.e is in quotes
+
+## Event Binding ( )
+<button (click)="onSave()">Save</button>
+- This event binding listens for a click, which would then call the component's onSave() method. 
+
+## Directives:
+- a class with a @Directive() director that allows Angular templates to be dynamic. Angular transforms the DOM according to instructuctions given by the directives.
+
+#### Two Types of Directives: Structural and Attribute
+
+###### Structural: alters layout, shapes DOM's structure by adding, removing, and manipulating elements. Any directive with a * is structural.
+~~ *ngFor
+- iterative
+~~ *ngIf
+- conditional: elements to HTML code if 'expression' is true
+
+###### Attribute: change appearance or behavior of an existing DOM element
+~~ ngModel: modifies behavior of an existing element
+- implements two-way data binding
+[ngModel]="currentHero.name" is syntax for one-way binding
+[(ngModel)]="currentHero.name" is for two-way binding
+
+
+-->
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
