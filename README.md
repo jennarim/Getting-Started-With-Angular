@@ -28,5 +28,5 @@ A store catalog with a product list, "Share" button, and "Notify Me" button. Thi
 -- if you didn't use [], then hovering over link would literally display w.e is in quotes
 
 * Event Binding ( )
-<button (click)="onSave()">Save</button>
+`<button (click)="onSave()">Save</button>`
 - This event binding listens for a click, which would then call the component's onSave() method. 
