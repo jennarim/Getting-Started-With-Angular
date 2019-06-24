@@ -1,6 +1,6 @@
 # Getting Started With Angular
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-xzhszm-hpeduq)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/my-store-test)
 
 ## Basic Outline
 A store catalog with a product list, "Share" button, and "Notify Me" button. This Single Page Application demonstrates a foundation in components, template syntax, two-way binding, routing, data management, and form management. 
